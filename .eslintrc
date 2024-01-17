@@ -1,0 +1,20 @@
+{
+  "extends": ["react-app", "prettier"],
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "arrowParens": "always", // Yêu cầu sử dụng dấu ngoặc đơn quanh tham số của hàm mũi tên.
+        "semi": false, //  Không yêu cầu dấu chấm phẩy sau mỗi câu lệnh.
+        "trailingComma": "none", //  Không yêu cầu dấu phẩy cuối cùng trong danh sách hoặc đối tượng
+        "tabWidth": 2, //Số lượng ký tự cho mỗi tab.
+        "endOfLine": "auto", // Sử dụng ký tự xuống dòng phù hợp với hệ điều hành.
+        "useTabs": false, // Sử dụng khoảng trắng thay vì tab.
+        "singleQuote": false, // Yêu cầu sử dụng dấu ngoặc đơn thay vì dấu ngoặc kép cho chuỗi
+        "printWidth": 120, // Số lượng ký tự tối đa trên mỗi dòng khi định dạng
+        "jsxSingleQuote": false // Yêu cầu sử dụng dấu ngoặc đơn thay vì dấu ngoặc kép cho JSX
+      }
+    ]
+  }
+}

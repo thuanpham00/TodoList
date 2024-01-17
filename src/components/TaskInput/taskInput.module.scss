@@ -1,0 +1,35 @@
+.title {
+  font: {
+    size: 3rem;
+    weight: 500;
+  };
+  line-height: 1.5
+}
+
+.form {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+
+  .input {
+    flex-grow: 1; // kéo dài hết mức có thể ***
+    height: 4rem;
+    border-radius: 0.7rem;
+    padding: 0 1rem;
+    outline: none;
+    border-width: 1px;
+  }
+
+  .btn {
+    flex-grow: 0; // không co phần tử lại
+    width: 5rem;
+    height: 4rem;
+    border-radius: 0.7rem;
+    border-width: 1px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

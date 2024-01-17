@@ -1,0 +1,53 @@
+.title {
+  font: {
+    size: 2.2rem;
+    weight: 500;
+  }
+  margin-bottom: 1rem;
+  word-spacing: -1px;
+}
+
+.taskList {
+  .taskItem {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 10px; // nếu không phải phần tử cuối thì mgb: 10px
+    }
+
+    &__checkBox {
+      flex: 0 0 10%;
+      max-width: 10%;
+      height: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    &__name {
+      flex: 0 0 70%;
+      max-width: 70%;
+      color: #383f50;
+      // flex-grow: 0 // ko mở rộng
+      // flex-shrink: 0 // ko co lại
+      // flex-basics: 70% // kích thước của phần tử chiếm 70% của container
+    
+      &.taskItem__nameDone {
+        color: red;
+        text-decoration: line-through;
+      }
+    }
+
+    &__row {
+      flex: 0 0 20%;
+      max-width: 20%;
+      display: flex;
+      justify-content: space-between;
+
+      .taskItem__action {
+        flex: 0 0 3.5rem;
+        max-width: 3.5rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
