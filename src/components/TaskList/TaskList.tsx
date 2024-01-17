@@ -31,7 +31,9 @@ export default function TaskList(props: TaskListProps) {
               checked={todoItem.done}
               onChange={changeDoneTaskItem(todoItem.id)}
             />
-            <span className={styles.taskItem__name}>{todoItem.name}</span>
+            <span className={`${styles.taskItem__name} ${todoItem.done ? styles.taskItem__nameDone : ""}`}>
+              {todoItem.name}
+            </span>
             <div className={styles.taskItem__row}>
               <button className={styles.taskItem__action} onClick={() => startEditTodo(todoItem.id)}>
                 ✏️
