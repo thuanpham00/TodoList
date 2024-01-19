@@ -54,6 +54,8 @@ export default function TodoList() {
       })
     })
   }
+  // prev là giá trị trạng thái trước đó (nhận vào callback) và dùng hàm map duyệt qua từng phần tử trong mảng todos
+  // check điều kiện và change
 
   // edit todo dựa vào currentTodo nếu click vào button thì có trạng thái currentTodo (id) dò id rồi sửa name
   // dựa vào id của item để dò tìm
